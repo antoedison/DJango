@@ -1,0 +1,26 @@
+<h1>
+    {% for x in fruits%}
+        {{x}}
+    {%endfor%}
+    {% with "Akshaya" as fname%}
+    <h1>{{fname}}</h1>
+    {%endwith%}
+
+
+    <table border = '1'>
+        {% for y in mydata %}
+          <tr>
+            <td>{{ y.fname }}</td>
+            <td>{{y.lname}}</td>
+          </tr>
+        {% endfor %}
+      </table>
+
+    
+    {% comment%}
+    {% for y in mydata%}
+    {#This is used to get all the values#}
+    <li>{{y.fname}}</li>
+    {%endfor%}
+    {%endcomment%}
+</h1>
